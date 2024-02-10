@@ -10,9 +10,7 @@ export default function Home() {
             <Box display={'flex'} flexDirection={'row'} alignItems={'center'} gap={'3em'} justifyContent={'space-between'} width={'100%'} mt='1em' >
                 <Text>Go To :</Text>
                 <Box display={'flex'} flexDirection={'column'} gap={'1em'}>
-                    <Link href={'/teknisi'}><Button>Teknisi Login</Button></Link>
-                    <Link href={'/admin'}><Button>Admin Login</Button></Link>
-                    <Link href={'/customer'}><Button>Customer Login</Button></Link>
+                    <Link href={'/login'}><Button>Login</Button></Link>
                 </Box>
             </Box>
         </Box>

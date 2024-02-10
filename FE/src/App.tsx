@@ -1,23 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import HomeAdmin from "./pages/admin/HomeAdmin";
 import Home from "./pages/Home";
-import HomeTeknisi from "./pages/teknisi/HomeTeknisi";
-import HomeCustomer from "./pages/customer/HomeCustomer";
-import { Box } from "@chakra-ui/react";
+import Login from "./pages/Login";
+import AdminPage from "./pages/admin/AdminPage";
+import TechPage from "./pages/teknisi/TechPage";
 function App() {
   return (
     <>
-      <Box>
-        <Box>Test</Box>
-        <Box>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/admin" element={<HomeAdmin />} />
-            <Route path="/customer" element={<HomeCustomer />} />
-            <Route path="/teknisi" element={<HomeTeknisi />} />
-          </Routes>
-        </Box>
-      </Box>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/technicians" element={<TechPage />} />
+      </Routes>
     </>
   );
 }
